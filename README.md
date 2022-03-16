@@ -5,7 +5,7 @@ From https://code.visualstudio.com/docs/remote/create-dev-container#_automate-de
 
 2. Enter `F1` again and enter the command, 'Remote-Containers:Open workspace in container'. Wait. Once complete, create a new VSCode terminal window. It should start in a container (and not on your host machine).
 
-3. Note you may edit the contents of `.devcontainer/` to get whatever env you'd like.
+3. Note you may edit the contents of `.devcontainer/` to get whatever env you'd like. Your `.gitconfig` is added by default. Your `~/.bash*` files are not.
 
 4. Rejoice and live better.
 
@@ -18,7 +18,7 @@ Elixir scripts use the `.exs` file-extension. They can be run like `elixir scrip
 From: https://elixirschool.com/en/lessons/basics/basics#trying-interactive-mode-2
 In the container, type `iex` to start an interactive Elixir REPL.
 
-Use `iex <filename>` to load an Elixir file into the REPL.
+Use `iex filename.exs` to load an Elixir file into the REPL.
 
 #### Projects
-Use `mix <project name>` to start a new project.
+Use `mix project_name` to start a new compiled (`.ex`) project.
