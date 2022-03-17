@@ -39,4 +39,7 @@ RUN su ${USERNAME} -c "mix local.hex --force \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
 # [Optional] Uncomment this line to install additional package.
-# RUN  mix ...
+# - Hex
+# - Phoenix
+RUN mix local.hex --force && \
+    mix archive.install hex phx_new --force
