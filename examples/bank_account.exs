@@ -46,6 +46,10 @@ defmodule BankAccount do
       fn -> Agent.update(account, &(&1 + amount)) end
     )
   end
+
+  @doc """
+  Apply func to account if it's open, else :error.
+  """
   defp do_if_account_open(account, func) do
     if Process.alive?(account) do
       func.()
