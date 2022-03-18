@@ -5,4 +5,4 @@ defmodule Recursive do
 end
 
 Recursive.reverse([1,2,3,4])
-  |> Enum.map(&IO.puts/1)
+  |> Enum.each(&IO.puts/1)
