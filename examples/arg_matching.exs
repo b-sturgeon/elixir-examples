@@ -1,6 +1,6 @@
 defmodule Greeter do
 
-  def hello(%{name: person_name} = person) do
+  def hello(%{name: person_name} = person) do # we can still use the origin arg by assigning it to a var
     IO.puts "Hello, " <> person_name
     IO.inspect(person)
   end
